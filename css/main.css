@@ -87,7 +87,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#site {
+body {
+  background-image: url('/images/background-pattern.png');
+}
+body #site {
   display: inline;
   float: left;
   width: 81.25%;
@@ -95,42 +98,42 @@ textarea {
   margin-left: 9.374999999999998%;
   margin-right: 9.374999999999998%;
 }
-#site header {
+body #site header {
   display: block;
   width: 102.08333333333333%;
   margin: 0 -1.0416666666666665%;
   *zoom: 1;
 }
-#site header:before,
-#site header:after {
+body #site header:before,
+body #site header:after {
   content: "";
   display: table;
 }
-#site header:after {
+body #site header:after {
   clear: both;
 }
-#site header #logo {
+body #site header #logo {
   display: inline;
   float: left;
   width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
 }
-#site header nav[role='site-navigation'] {
+body #site header nav[role='site-navigation'] {
   display: block;
   width: 102.49999999999999%;
   margin: 0 -1.25%;
   *zoom: 1;
   margin-left: 34.37499999999999%;
 }
-#site header nav[role='site-navigation']:before,
-#site header nav[role='site-navigation']:after {
+body #site header nav[role='site-navigation']:before,
+body #site header nav[role='site-navigation']:after {
   content: "";
   display: table;
 }
-#site header nav[role='site-navigation']:after {
+body #site header nav[role='site-navigation']:after {
   clear: both;
 }
-#site header nav[role='site-navigation'] li {
+body #site header nav[role='site-navigation'] li {
   display: inline;
   float: left;
   width: 17.5%;

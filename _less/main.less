@@ -100,20 +100,23 @@ textarea {
 @gutter-width: 20;
 @total-width: 100%;
 
-#site {
-  .column(10);
-  .push(1);
-  .pull(1);
-  header {
-    .row(12);
-    #logo {
-      .column(2);
-    }
-    nav[role='site-navigation'] {
-      .row(10);
-      .push(4);
-      li {
-        .column(2, 10);
+body {
+  background-image: url('/images/background-pattern.png');
+  #site {
+    .column(10);
+    .push(1);
+    .pull(1);
+    header {
+      .row(12);
+      #logo {
+        .column(2);
+      }
+      nav[role='site-navigation'] {
+        .row(10);
+        .push(4);
+        li {
+          .column(2, 10);
+        }
       }
     }
   }
