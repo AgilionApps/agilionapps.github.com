@@ -118,25 +118,25 @@ body #site header #logo {
   width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
 }
-body #site header nav[role='site-navigation'] {
+body #site header nav[role='site-navigation'] ul {
   display: block;
   width: 102.49999999999999%;
   margin: 0 -1.25%;
   *zoom: 1;
-  margin-left: 34.37499999999999%;
+  margin-left: 51.041666666666664%;
 }
-body #site header nav[role='site-navigation']:before,
-body #site header nav[role='site-navigation']:after {
+body #site header nav[role='site-navigation'] ul:before,
+body #site header nav[role='site-navigation'] ul:after {
   content: "";
   display: table;
 }
-body #site header nav[role='site-navigation']:after {
+body #site header nav[role='site-navigation'] ul:after {
   clear: both;
 }
-body #site header nav[role='site-navigation'] li {
+body #site header nav[role='site-navigation'] ul li {
   display: inline;
   float: left;
-  width: 17.5%;
+  width: 7.5%;
   margin: 0 1.25%;
 }
 /* ==========================================================================

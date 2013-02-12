@@ -112,10 +112,16 @@ body {
         .column(2);
       }
       nav[role='site-navigation'] {
-        .row(10);
-        .push(4);
-        li {
-          .column(2, 10);
+        ul {
+          .row(10);
+          .push(6);
+          li {
+            .column(1, 10);
+            a {
+              display: block;
+              text-align: right;
+            }
+          }
         }
       }
     }
