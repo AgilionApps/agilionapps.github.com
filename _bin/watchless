@@ -1,0 +1,7 @@
+#/bin/sh
+
+# Requires:
+# less installed via NPM (npm install -g lessc)
+# watchr installed via Ruby (gem install watchr --no-ri --no-rdoc)
+
+watchr -e 'watch("_less/(.*)\.less$") {|f| command="lessc #{f[0]} > css/#{f[1]}.css"; puts(command); system(command) }'
