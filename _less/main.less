@@ -100,14 +100,24 @@ textarea {
 @gutter-width: 20;
 @total-width: 100%;
 
+a {
+  color: #492f2f;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 body {
   background-image: url('/images/background-pattern.png');
+  font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, sans-serif;
   #site {
     .column(10);
     .push(1);
     .pull(1);
     header {
       .row(12);
+      padding: 10px 0;
       #logo {
         .column(2);
       }

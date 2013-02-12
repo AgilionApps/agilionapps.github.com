@@ -87,6 +87,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a {
+  color: #492f2f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 body {
   background-image: url('/images/background-pattern.png');
 }
@@ -138,6 +145,10 @@ body #site header nav[role='site-navigation'] ul li {
   float: left;
   width: 7.5%;
   margin: 0 1.25%;
+}
+body #site header nav[role='site-navigation'] ul li a {
+  display: block;
+  text-align: right;
 }
 /* ==========================================================================
    Helper classes
