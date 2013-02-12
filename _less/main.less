@@ -108,6 +108,16 @@ a {
   }
 }
 
+.h-rule {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-position: 0 -4px;
+}
+
 body {
   background-image: url('/images/background-pattern.png');
   font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, sans-serif;
@@ -134,6 +144,10 @@ body {
           }
         }
       }
+    }
+    #main {
+      .h-rule;
+      padding: 10px 0;
     }
   }
 }
