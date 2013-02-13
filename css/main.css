@@ -104,6 +104,10 @@ h1 {
   font-size: 64px;
   font-weight: 800;
 }
+h2 {
+  color: #492f2f;
+  font-size: 30px;
+}
 a {
   color: #492f2f;
   font-weight: 400;
@@ -230,6 +234,90 @@ body.home .what-we-do h2 {
 }
 body.home .what-we-do p {
   margin-bottom: 6em;
+}
+body.customers h1 {
+  margin-bottom: 0em;
+}
+body.customers h2.subtitle {
+  margin-top: 0;
+}
+body.customers section.first {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+}
+body.customers section.featured-customer {
+  *zoom: 1;
+  clear: both;
+  padding-top: 2em;
+}
+body.customers section.featured-customer:before,
+body.customers section.featured-customer:after {
+  content: "";
+  display: table;
+}
+body.customers section.featured-customer:after {
+  clear: both;
+}
+body.customers section.featured-customer div.screenshots {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+}
+body.customers section.featured-customer div.story {
+  display: inline;
+  float: left;
+  width: 72.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+body.customers section.testomonials {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  *zoom: 1;
+  clear: both;
+  padding-top: 4em;
+  margin-top: 4em;
+}
+body.customers section.testomonials:before,
+body.customers section.testomonials:after {
+  content: "";
+  display: table;
+}
+body.customers section.testomonials:after {
+  clear: both;
+}
+body.customers section.testomonials div.testomonial {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+body.customers section.testomonials div.testomonial img {
+  float: left;
+  margin: 1.5em;
+}
+body.customers section.testomonials div.testomonial .attribution {
+  clear: both;
+  font-weight: bold;
+}
+body.customers section.testomonials div.new-row {
+  clear: both;
 }
 /* ==========================================================================
    Helper classes
