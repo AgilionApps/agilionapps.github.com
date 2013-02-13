@@ -96,6 +96,14 @@ textarea {
    ========================================================================== */
 
 //
+// Colors
+// 
+
+@fill-brown: #413333;
+@text-brown: #492f2f;
+
+
+//
 // Mixins
 //
 
@@ -123,13 +131,13 @@ textarea {
 //
 
 h1 {
-  color: #492f2f;
+  color: @text-brown;
   font-size: 64px;
   font-weight: 800;
 }
 
 a {
-  color: #492f2f;
+  color: @text-brown;
   font-weight: 400;
   text-decoration: none;
   &:hover {
@@ -146,55 +154,63 @@ a {
 @gutter-width: 20;
 @total-width: 100%;
 
+// Base header/main/footer structure & layout
 body {
-  background-image: url('/images/background-pattern.png');
+  background: @fill-brown;
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
-  #site-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    #site {
-      margin-left: 5%;
-      margin-right: 5%;
-      header {
-        .clearfix();
-        #logo {
-          .column(2);
-          margin-bottom: 1.25em;
-          margin-top: 0.75em;
-        }
-        nav[role='site-navigation'] {
-          .column(10);
-          ul {
-            float: right;
-            li {
-              float: left;
-              a {
-                display: block;
-                margin-left: 3em;
-                text-align: right;
-              }
-            }
-          }
+  header, footer {
+    background: @fill-brown;
+  }
+
+  div#main {
+    background-image: url('/images/background-pattern.png');
+    background: #ffffff;
+  }
+
+  header, footer, #main {
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      .content {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+// Header Styling
+header {
+  .clearfix();
+  #logo {
+    .column(2);
+    margin-bottom: 1.25em;
+    margin-top: 0.75em;
+  }
+  nav[role='site-navigation'] {
+    .column(10);
+    ul {
+      float: right;
+      li {
+        float: left;
+        a {
+          color: #ffffff;
+          display: block;
+          margin-left: 3em;
+          text-align: right;
         }
       }
     }
-    #main {
-      .h-rule;
-      padding: 10px 0;
-    }
   }
 }
 
-//
-// Custom Styles
-//
+// Footer Styling
 
-.tagline {
-  h1 {
-    text-align: center;
-  }
+
+#main {
+  .h-rule;
+  padding: 10px 0;
 }
-
 
 //
 // Home Page
