@@ -179,6 +179,13 @@ body #site #main {
 .tagline h1 {
   text-align: center;
 }
+body.home .customers ul li {
+  display: inline;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  text-align: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
