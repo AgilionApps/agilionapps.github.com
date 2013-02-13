@@ -129,7 +129,6 @@ body #site header {
   width: 102.08333333333333%;
   margin: 0 -1.0416666666666665%;
   *zoom: 1;
-  padding: 10px 0;
 }
 body #site header:before,
 body #site header:after {
@@ -144,18 +143,24 @@ body #site header #logo {
   float: left;
   width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
+  margin-bottom: 1.25em;
+  margin-top: 0.75em;
+}
+body #site header nav[role='site-navigation'] {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
 }
 body #site header nav[role='site-navigation'] ul {
   float: right;
-  display: inline-block;
 }
 body #site header nav[role='site-navigation'] ul li {
-  display: block;
   float: left;
-  margin-left: 3em;
 }
 body #site header nav[role='site-navigation'] ul li a {
   display: block;
+  margin-left: 3em;
   text-align: right;
 }
 body #site #main {

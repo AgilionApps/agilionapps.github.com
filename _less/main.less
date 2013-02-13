@@ -99,6 +99,14 @@ textarea {
 // Mixins
 //
 
+.inline-block(@align:middle) {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: @align;
+}
+
 .h-rule {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
   background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
@@ -147,20 +155,20 @@ body {
     .pull(1);
     header {
       .row(12);
-      padding: 10px 0;
       #logo {
-        .column(2);
+        .column(2, 12);
+        margin-bottom: 1.25em;
+        margin-top: 0.75em;
       }
       nav[role='site-navigation'] {
+        .column(10, 12);
         ul {
           float: right;
-          display: inline-block;
           li {
-            display: block;
             float: left;
-            margin-left: 3em;
             a {
               display: block;
+              margin-left: 3em;
               text-align: right;
             }
           }
