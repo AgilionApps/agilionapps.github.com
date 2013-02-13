@@ -235,6 +235,40 @@ body.home .what-we-do h2 {
 body.home .what-we-do p {
   margin-bottom: 6em;
 }
+body.team .team-member {
+  *zoom: 1;
+}
+body.team .team-member:before,
+body.team .team-member:after {
+  content: "";
+  display: table;
+}
+body.team .team-member:after {
+  clear: both;
+}
+body.team .team-member .org {
+  display: none;
+}
+body.team .team-member img {
+  display: inline;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  float: left;
+}
+body.team .team-member ul.links {
+  display: inline;
+  width: 6.25%;
+  margin: 0 1.0416666666666665%;
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+}
+body.team .team-member .bio {
+  display: inline;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  float: left;
+}
 body.customers h1 {
   margin-bottom: 0em;
 }
