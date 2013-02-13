@@ -95,32 +95,52 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-@columns: 12;
-@column-width: 60;
-@gutter-width: 20;
-@total-width: 100%;
-
-a {
-  color: #492f2f;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
+//
+// Mixins
+//
 
 .h-rule {
-  background: -webkit-radial-gradient(50% 0%, 50% 10px, #aaa 0%, transparent 100%);
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
   background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
   background: -o-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
   background: -ms-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
   background-image: radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-position: 0 -4px;
+  background-repeat: no-repeat;
 }
+
+//
+// Base Styles
+//
+
+h1 {
+  color: #492f2f;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+a {
+  color: #492f2f;
+  font-weight: 400;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//
+// Layout
+//
+
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+@total-width: 100%;
 
 body {
   background-image: url('/images/background-pattern.png');
-  font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
   #site {
     .column(10);
     .push(1);
@@ -152,7 +172,15 @@ body {
   }
 }
 
+//
+// Custom Styles
+//
 
+.tagline {
+  h1 {
+    text-align: center;
+  }
+}
 
 
 
