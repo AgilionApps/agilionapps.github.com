@@ -149,27 +149,30 @@ a {
 body {
   background-image: url('/images/background-pattern.png');
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
-  #site {
-    .column(10);
-    .push(1);
-    .pull(1);
-    header {
-      .row(12);
-      #logo {
-        .column(2, 12);
-        margin-bottom: 1.25em;
-        margin-top: 0.75em;
-      }
-      nav[role='site-navigation'] {
-        .column(10, 12);
-        ul {
-          float: right;
-          li {
-            float: left;
-            a {
-              display: block;
-              margin-left: 3em;
-              text-align: right;
+  #site-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    #site {
+      margin-left: 5%;
+      margin-right: 5%;
+      header {
+        .row();
+        #logo {
+          .column(2);
+          margin-bottom: 1.25em;
+          margin-top: 0.75em;
+        }
+        nav[role='site-navigation'] {
+          .column(10);
+          ul {
+            float: right;
+            li {
+              float: left;
+              a {
+                display: block;
+                margin-left: 3em;
+                text-align: right;
+              }
             }
           }
         }

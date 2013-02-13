@@ -116,29 +116,29 @@ body {
   background-image: url('/images/background-pattern.png');
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
 }
-body #site {
-  display: inline;
-  float: left;
-  width: 81.25%;
-  margin: 0 1.0416666666666665%;
-  margin-left: 9.374999999999998%;
-  margin-right: 9.374999999999998%;
+body #site-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-body #site header {
+body #site-wrapper #site {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body #site-wrapper #site header {
   display: block;
   width: 102.08333333333333%;
   margin: 0 -1.0416666666666665%;
   *zoom: 1;
 }
-body #site header:before,
-body #site header:after {
+body #site-wrapper #site header:before,
+body #site-wrapper #site header:after {
   content: "";
   display: table;
 }
-body #site header:after {
+body #site-wrapper #site header:after {
   clear: both;
 }
-body #site header #logo {
+body #site-wrapper #site header #logo {
   display: inline;
   float: left;
   width: 14.583333333333334%;
@@ -146,24 +146,24 @@ body #site header #logo {
   margin-bottom: 1.25em;
   margin-top: 0.75em;
 }
-body #site header nav[role='site-navigation'] {
+body #site-wrapper #site header nav[role='site-navigation'] {
   display: inline;
   float: left;
   width: 81.25%;
   margin: 0 1.0416666666666665%;
 }
-body #site header nav[role='site-navigation'] ul {
+body #site-wrapper #site header nav[role='site-navigation'] ul {
   float: right;
 }
-body #site header nav[role='site-navigation'] ul li {
+body #site-wrapper #site header nav[role='site-navigation'] ul li {
   float: left;
 }
-body #site header nav[role='site-navigation'] ul li a {
+body #site-wrapper #site header nav[role='site-navigation'] ul li a {
   display: block;
   margin-left: 3em;
   text-align: right;
 }
-body #site #main {
+body #site-wrapper #main {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
   background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
   background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
