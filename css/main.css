@@ -225,6 +225,12 @@ body.home .what-we-do:after {
 body.home .what-we-do:after {
   clear: both;
 }
+body.home .what-we-do h2 {
+  margin-top: 2em;
+}
+body.home .what-we-do p {
+  margin-bottom: 6em;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
