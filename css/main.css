@@ -259,6 +259,10 @@ body.team .team-member:after {
 body.team .team-member:after {
   clear: both;
 }
+body.team .team-member h3 {
+  margin-top: .25em;
+  color: #492f2f;
+}
 body.team .team-member .org {
   display: none;
 }
