@@ -235,8 +235,21 @@ body.home .what-we-do h2 {
 body.home .what-we-do p {
   margin-bottom: 6em;
 }
+body.team .first {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+}
 body.team .team-member {
   *zoom: 1;
+  padding-top: 3em;
 }
 body.team .team-member:before,
 body.team .team-member:after {
@@ -249,25 +262,23 @@ body.team .team-member:after {
 body.team .team-member .org {
   display: none;
 }
-body.team .team-member img {
+body.team .team-member .photo {
   display: inline;
+  float: left;
   width: 22.916666666666664%;
   margin: 0 1.0416666666666665%;
-  float: left;
-}
-body.team .team-member ul.links {
-  display: inline;
-  width: 6.25%;
-  margin: 0 1.0416666666666665%;
-  float: left;
-  list-style: none;
-  padding: 0 20px;
 }
 body.team .team-member .bio {
   display: inline;
-  width: 47.91666666666667%;
-  margin: 0 1.0416666666666665%;
   float: left;
+  width: 72.91666666666666%;
+  margin: 0 1.0416666666666665%;
+}
+body.team .team-member .bio ul.links {
+  padding: 0;
+}
+body.team .team-member .bio ul.links li {
+  display: inline-block;
 }
 body.customers h1 {
   margin-bottom: 0em;

@@ -267,24 +267,26 @@ body.home {
 //
 
 body.team {
+  .first {
+    .h-rule();
+  }
   .team-member {
     .clearfix();
+    padding-top: 3em;
     .org {
       display: none;
     }
-    img {
+    .photo {
       .column(3);
-      float: left;
-    }
-    ul.links {
-      .column(1);
-      float: left;
-      list-style: none;
-      padding: 0 20px;
     }
     .bio {
-      .column(6);
-      float: left;
+      .column(9);
+      ul.links {
+        padding: 0;
+        li {
+          display: inline-block;
+        }
+      }
     }
   }
 }
