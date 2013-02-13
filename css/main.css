@@ -113,29 +113,41 @@ a:hover {
   text-decoration: underline;
 }
 body {
-  background-image: url('/images/background-pattern.png');
+  background: #413333;
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
 }
-body #site-wrapper {
+body header,
+body footer {
+  background: #413333;
+}
+body div#main {
+  background-image: url('/images/background-pattern.png');
+  background: #ffffff;
+}
+body header .content-wrapper,
+body footer .content-wrapper,
+body #main .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
-body #site-wrapper #site {
+body header .content-wrapper .content,
+body footer .content-wrapper .content,
+body #main .content-wrapper .content {
   margin-left: 5%;
   margin-right: 5%;
 }
-body #site-wrapper #site header {
+header {
   *zoom: 1;
 }
-body #site-wrapper #site header:before,
-body #site-wrapper #site header:after {
+header:before,
+header:after {
   content: "";
   display: table;
 }
-body #site-wrapper #site header:after {
+header:after {
   clear: both;
 }
-body #site-wrapper #site header #logo {
+header #logo {
   display: inline;
   float: left;
   width: 14.583333333333334%;
@@ -143,24 +155,25 @@ body #site-wrapper #site header #logo {
   margin-bottom: 1.25em;
   margin-top: 0.75em;
 }
-body #site-wrapper #site header nav[role='site-navigation'] {
+header nav[role='site-navigation'] {
   display: inline;
   float: left;
   width: 81.25%;
   margin: 0 1.0416666666666665%;
 }
-body #site-wrapper #site header nav[role='site-navigation'] ul {
+header nav[role='site-navigation'] ul {
   float: right;
 }
-body #site-wrapper #site header nav[role='site-navigation'] ul li {
+header nav[role='site-navigation'] ul li {
   float: left;
 }
-body #site-wrapper #site header nav[role='site-navigation'] ul li a {
+header nav[role='site-navigation'] ul li a {
+  color: #ffffff;
   display: block;
   margin-left: 3em;
   text-align: right;
 }
-body #site-wrapper #main {
+#main {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
   background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
   background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
@@ -172,9 +185,6 @@ body #site-wrapper #main {
   background-position: 0 -4px;
   background-repeat: no-repeat;
   padding: 10px 0;
-}
-.tagline h1 {
-  text-align: center;
 }
 body.home .customers ul li {
   display: inline;
