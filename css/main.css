@@ -122,7 +122,8 @@ body footer {
 }
 body div#main {
   background-image: url('/images/background-pattern.png');
-  background: #ffffff;
+  background-repeat: repeat;
+  background-color: #ffffff;
 }
 body header .content-wrapper,
 body footer .content-wrapper,
@@ -168,10 +169,30 @@ header nav[role='site-navigation'] ul li {
   float: left;
 }
 header nav[role='site-navigation'] ul li a {
+  font-weight: bold;
   color: #ffffff;
   display: block;
   margin-left: 3em;
   text-align: right;
+}
+footer {
+  color: #dddddd;
+}
+footer h2.org {
+  margin-left: -9999em;
+  margin-bottom: -1em;
+}
+footer .tel,
+footer .email,
+footer .address {
+  display: block;
+}
+footer a {
+  color: #dddddd;
+}
+footer .copyright {
+  font-size: .8em;
+  margin-top: 1em;
 }
 #main {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
