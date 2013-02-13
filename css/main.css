@@ -189,9 +189,20 @@ header nav[role='site-navigation'] ul li a {
 body.home .customers ul li {
   display: inline;
   float: left;
-  width: 22.916666666666664%;
+  width: 31.25%;
   margin: 0 1.0416666666666665%;
   text-align: center;
+}
+body.home .what-we-do {
+  *zoom: 1;
+}
+body.home .what-we-do:before,
+body.home .what-we-do:after {
+  content: "";
+  display: table;
+}
+body.home .what-we-do:after {
+  clear: both;
 }
 /* ==========================================================================
    Helper classes
