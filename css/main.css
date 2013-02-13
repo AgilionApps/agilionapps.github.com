@@ -146,25 +146,13 @@ body #site header #logo {
   margin: 0 1.0416666666666665%;
 }
 body #site header nav[role='site-navigation'] ul {
-  display: block;
-  width: 102.49999999999999%;
-  margin: 0 -1.25%;
-  *zoom: 1;
-  margin-left: 51.041666666666664%;
-}
-body #site header nav[role='site-navigation'] ul:before,
-body #site header nav[role='site-navigation'] ul:after {
-  content: "";
-  display: table;
-}
-body #site header nav[role='site-navigation'] ul:after {
-  clear: both;
+  float: right;
+  display: inline-block;
 }
 body #site header nav[role='site-navigation'] ul li {
-  display: inline;
+  display: block;
   float: left;
-  width: 7.5%;
-  margin: 0 1.25%;
+  margin-left: 3em;
 }
 body #site header nav[role='site-navigation'] ul li a {
   display: block;

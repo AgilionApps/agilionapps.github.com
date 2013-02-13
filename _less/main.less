@@ -153,10 +153,12 @@ body {
       }
       nav[role='site-navigation'] {
         ul {
-          .row(10);
-          .push(6);
+          float: right;
+          display: inline-block;
           li {
-            .column(1, 10);
+            display: block;
+            float: left;
+            margin-left: 3em;
             a {
               display: block;
               text-align: right;
