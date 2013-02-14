@@ -408,6 +408,32 @@ body.contact .contact-form .wufoo h1 {
 body.contact .contact-form .wufoo h2 {
   display: none;
 }
+body.services div.icon {
+  padding-top: 2em;
+  text-align: center;
+  display: inline;
+  float: left;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+body.services div.discovery {
+  color: #527fa0;
+}
+body.services div.design {
+  color: #e47c77;
+}
+body.services div.development {
+  color: #e99b64;
+}
+body.services div.delivery {
+  color: #e8ba6d;
+}
+body.services section.process {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

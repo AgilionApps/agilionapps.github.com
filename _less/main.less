@@ -97,11 +97,14 @@ textarea {
 
 //
 // Colors
-// 
+//
 
-@fill-brown: #413333;
-@text-brown: #492f2f;
-
+@fill-brown:     #413333;
+@text-brown:     #492f2f;
+@agilion-blue:   #527fa0;
+@agilion-red:    #e47c77;
+@agilion-orange: #e99b64;
+@agilion-yellow: #e8ba6d;
 
 //
 // Mixins
@@ -372,6 +375,26 @@ body.contact {
   }
 }
 
+
+//
+// Services Page
+//
+
+body.services {
+  div.icon {
+    padding-top: 2em;
+    text-align: center;
+    .column(2);
+  }
+  div.discovery   { color: @agilion-blue; }
+  div.design      { color: @agilion-red; }
+  div.development { color: @agilion-orange; }
+  div.delivery    { color: @agilion-yellow; }
+  section.process {
+    .column(10);
+  }
+
+}
 
 
 
