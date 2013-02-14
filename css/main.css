@@ -408,6 +408,21 @@ body.contact .contact-form .wufoo h1 {
 body.contact .contact-form .wufoo h2 {
   display: none;
 }
+body.community .slide-deck {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  *zoom: 1;
+}
+body.community .slide-deck:before,
+body.community .slide-deck:after {
+  content: "";
+  display: table;
+}
+body.community .slide-deck:after {
+  clear: both;
+}
 body.services div.icon {
   padding-top: 2em;
   text-align: center;
