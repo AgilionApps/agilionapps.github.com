@@ -132,8 +132,23 @@ body div#main {
 body header .content-wrapper,
 body footer .content-wrapper,
 body #main .content-wrapper {
+  *zoom: 1;
   max-width: 1200px;
   margin: 0 auto;
+}
+body header .content-wrapper:before,
+body footer .content-wrapper:before,
+body #main .content-wrapper:before,
+body header .content-wrapper:after,
+body footer .content-wrapper:after,
+body #main .content-wrapper:after {
+  content: "";
+  display: table;
+}
+body header .content-wrapper:after,
+body footer .content-wrapper:after,
+body #main .content-wrapper:after {
+  clear: both;
 }
 body header .content-wrapper .content,
 body footer .content-wrapper .content,
@@ -395,9 +410,6 @@ body.contact .contact-form .wufoo h1 {
 }
 body.contact .contact-form .wufoo h2 {
   display: none;
-}
-body.contact p.wat {
-  clear: both;
 }
 /* ==========================================================================
    Helper classes
