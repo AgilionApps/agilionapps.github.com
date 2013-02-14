@@ -116,6 +116,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+h1.with-subtitle {
+  margin-bottom: 0em;
+}
+h2.subtitle {
+  margin-top: 0;
+}
 body {
   background: #413333;
   font-family: proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
@@ -305,12 +311,6 @@ body.team .team-member .bio ul.links {
 }
 body.team .team-member .bio ul.links li {
   display: inline-block;
-}
-body.customers h1 {
-  margin-bottom: 0em;
-}
-body.customers h2.subtitle {
-  margin-top: 0;
 }
 body.customers section.first {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
