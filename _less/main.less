@@ -218,23 +218,23 @@ footer {
   clear: both;
   .clearfix();
   color: #dddddd;
-  h2.org {
-    margin-left: -9999em;
-    margin-bottom: -1em;
+  padding-top: 0.5em;
+
+  .contact-info {
+    .column(6);
+    h2.org {
+      display: none;
+    }
+    .tel, .email, .address { display: block; }
+    a { color: #dddddd; }
   }
-  .tel, .email, .address { display: block; }
-  a { color: #dddddd; }
 
   .copyright {
+    .column(6);
+    text-align: right;
     font-size: .8em;
-    margin-top: 1em;
   }
 
-}
-
-#main {
-  .h-rule;
-  padding: 10px 0;
 }
 
 //

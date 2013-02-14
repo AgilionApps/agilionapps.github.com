@@ -198,6 +198,7 @@ footer {
   clear: both;
   *zoom: 1;
   color: #dddddd;
+  padding-top: 0.5em;
 }
 footer:before,
 footer:after {
@@ -207,34 +208,30 @@ footer:after {
 footer:after {
   clear: both;
 }
-footer h2.org {
-  margin-left: -9999em;
-  margin-bottom: -1em;
+footer .contact-info {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
 }
-footer .tel,
-footer .email,
-footer .address {
+footer .contact-info h2.org {
+  display: none;
+}
+footer .contact-info .tel,
+footer .contact-info .email,
+footer .contact-info .address {
   display: block;
 }
-footer a {
+footer .contact-info a {
   color: #dddddd;
 }
 footer .copyright {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+  text-align: right;
   font-size: .8em;
-  margin-top: 1em;
-}
-#main {
-  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
-  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
-  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
-  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
-  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-
-  background-position: 0 -4px;
-  background-repeat: no-repeat;
-  padding: 10px 0;
 }
 body.home .customers ul li {
   display: inline;
