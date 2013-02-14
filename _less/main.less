@@ -214,6 +214,8 @@ header {
 // Footer Styling
 
 footer {
+  clear: both;
+  .clearfix();
   color: #dddddd;
   h2.org {
     margin-left: -9999em;
@@ -346,6 +348,27 @@ body.customers {
       clear: both;
     }
   }
+}
+
+//
+// Contact Page
+//
+
+body.contact {
+  .contact-info {
+    .column(6);
+  }
+
+  .contact-form {
+    .column(6);
+
+    .wufoo {
+      h1 { display: none; }
+      h2 { display: none; }
+    }
+  }
+
+  p.wat { clear: both };
 }
 
 

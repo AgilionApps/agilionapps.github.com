@@ -180,7 +180,17 @@ header nav[role='site-navigation'] ul li a {
   text-align: right;
 }
 footer {
+  clear: both;
+  *zoom: 1;
   color: #dddddd;
+}
+footer:before,
+footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
 }
 footer h2.org {
   margin-left: -9999em;
@@ -366,6 +376,27 @@ body.customers section.testomonials div.testomonial .attribution {
   font-weight: bold;
 }
 body.customers section.testomonials div.new-row {
+  clear: both;
+}
+body.contact .contact-info {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+body.contact .contact-form {
+  display: inline;
+  float: left;
+  width: 47.91666666666667%;
+  margin: 0 1.0416666666666665%;
+}
+body.contact .contact-form .wufoo h1 {
+  display: none;
+}
+body.contact .contact-form .wufoo h2 {
+  display: none;
+}
+body.contact p.wat {
   clear: both;
 }
 /* ==========================================================================
