@@ -103,8 +103,7 @@ textarea {
 // Colors
 //
 
-@fill-brown:     #413333;
-@text-brown:     #492f2f;
+@brown:     #413333;
 @agilion-blue:   #527fa0;
 @agilion-red:    #e47c77;
 @agilion-orange: #e99b64;
@@ -143,24 +142,27 @@ textarea {
 //
 
 h1 {
-  color: @text-brown;
+  color: @brown;
   font-size: 4.571em;
   font-weight: 800;
   &.with-subtitle {
     margin-bottom: 0em;
     & + h2.subtitle {
+      font-weight: 300;
+      margin-bottom: 2em;
       margin-top: 0;
+      line-height: 1.1em;
     }
   }
 }
 
 h2 {
-  color: @text-brown;
+  color: @brown;
   font-size: 30px;
 }
 
 a {
-  color: @text-brown;
+  color: @brown;
   font-weight: 400;
   text-decoration: none;
   &:hover {
@@ -180,10 +182,10 @@ a {
 
 // Base header/main/footer structure & layout
 body {
-  background: @fill-brown;
+  background: @brown;
   font-family: @sansFontFamily;
   header, footer {
-    background: @fill-brown;
+    background: @brown;
   }
 
   div#main {
@@ -302,7 +304,7 @@ body.team {
     padding-top: 3em;
     h3 {
       margin-top: .25em;
-      color: @text-brown;
+      color: @brown;
     }
     .org {
       display: none;
