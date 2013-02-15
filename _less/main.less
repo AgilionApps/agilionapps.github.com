@@ -147,7 +147,8 @@ h1 {
   font-size: 4.571em;
   font-weight: 800;
   &.with-subtitle {
-    margin-bottom: 0em;
+    line-height: 0.9em;
+    margin-bottom: 0.2em;
     text-align: center;
     & + h2.subtitle {
       font-weight: 300;
@@ -280,7 +281,7 @@ footer {
 body.home {
   section.customers {
     .h-rule();
-    margin-bottom: 4em;
+    margin-bottom: @baseFontSize * 5.357 !important;
     ul {
       .clearfix();
       li {
@@ -295,6 +296,9 @@ body.home {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 4em;
+    p {
+      margin-top: 0;
+    }
   }
 }
 
@@ -303,9 +307,6 @@ body.home {
 //
 
 body.team {
-  .first {
-    .h-rule();
-  }
   .team-member {
     .clearfix();
     padding-top: 3em;
@@ -330,6 +331,12 @@ body.team {
         }
       }
     }
+    &.first {
+      .h-rule();
+    }
+    &.last {
+      margin-bottom: 7em;
+    }
   }
 }
 
@@ -343,6 +350,9 @@ body.customers {
     margin-bottom: 4em;
     div.screenshot {
       .column(3, 12);
+      img {
+        width: 100%;
+      }
     }
     div.story {
       .column(9, 12);
@@ -361,7 +371,8 @@ body.customers {
     .h-rule();
     .clearfix();
     padding-top: 4em;
-    margin-top: 4em;
+    margin-bottom: 6em;
+    margin-top: 6em;
     div.testomonial {
       .column(6);
       img {
@@ -432,15 +443,17 @@ body.process {
     .row(12);
     h2 {
       margin-bottom: 0.25em;
+      margin-top: 0;
     }
     p {
       font-size: 1.25em;
       line-height: 1.5em;
+      margin-bottom: 2em;
       margin-top: 0;
     }
     div.icon {
       .column(2, 12);
-      padding-top: 1.9em;
+      padding-top: 0.3em;
       text-align: center;
       i {
         line-height: 1em;
