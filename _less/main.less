@@ -144,7 +144,7 @@ textarea {
 
 h1 {
   color: @text-brown;
-  font-size: 64px;
+  font-size: 4.571em;
   font-weight: 800;
   &.with-subtitle {
     margin-bottom: 0em;
@@ -264,7 +264,9 @@ footer {
 //
 
 body.home {
-  .customers {
+  section.customers {
+    .clearfix();
+    margin-bottom: 4em;
     ul {
       li {
         .column(4);
@@ -273,15 +275,9 @@ body.home {
       }
     }
   }
-
-  .what-we-do {
+  section.what-we-do {
     .clearfix();
-    h2 {
-      margin-top: 2em;
-    }
-    p {
-      margin-bottom: 6em;
-    }
+    margin-bottom: 10em;
   }
 }
 

@@ -1575,38 +1575,54 @@ footer .copyright {
   text-align: right;
   font-size: .8em;
 }
-body.home .customers ul li {
+body.home section.customers {
+  *zoom: 1;
+  margin-bottom: 4em;
+}
+body.home section.customers:before,
+body.home section.customers:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body.home section.customers:after {
+  clear: both;
+}
+body.home section.customers:before,
+body.home section.customers:after {
+  content: "";
+  display: table;
+}
+body.home section.customers:after {
+  clear: both;
+}
+body.home section.customers ul li {
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   text-align: center;
 }
-body.home .what-we-do {
+body.home section.what-we-do {
   *zoom: 1;
+  margin-bottom: 10em;
 }
-body.home .what-we-do:before,
-body.home .what-we-do:after {
+body.home section.what-we-do:before,
+body.home section.what-we-do:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body.home .what-we-do:after {
+body.home section.what-we-do:after {
   clear: both;
 }
-body.home .what-we-do:before,
-body.home .what-we-do:after {
+body.home section.what-we-do:before,
+body.home section.what-we-do:after {
   content: "";
   display: table;
 }
-body.home .what-we-do:after {
+body.home section.what-we-do:after {
   clear: both;
-}
-body.home .what-we-do h2 {
-  margin-top: 2em;
-}
-body.home .what-we-do p {
-  margin-bottom: 6em;
 }
 body.team .first {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
@@ -1821,6 +1837,30 @@ body.process section.process {
   float: left;
   width: 81.25%;
   margin: 0 1.0416666666666665%;
+}
+body.community .slide-deck {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  *zoom: 1;
+}
+body.community .slide-deck:before,
+body.community .slide-deck:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body.community .slide-deck:after {
+  clear: both;
+}
+body.community .slide-deck:before,
+body.community .slide-deck:after {
+  content: "";
+  display: table;
+}
+body.community .slide-deck:after {
+  clear: both;
 }
 /* ==========================================================================
    Helper classes
