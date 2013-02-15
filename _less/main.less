@@ -2,6 +2,7 @@
 @import 'mixins.less';
 @import 'grid.less';
 @import 'forms.less';
+@import 'buttons.less';
 
 /*
  * HTML5 Boilerplate
@@ -114,15 +115,13 @@ textarea {
 //
 
 @sansFontFamily: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@baseFontSize: 12px;
-@baseLineHeight: 1.5em;
 
 //
 // Button Defaults
 //
 
-@btnBackground: #08c;
-@btnBackgroundHighlight: rgba(255, 255, 255, 0.1);
+@btnPrimaryBackground: @agilion-blue;
+@btnPrimaryBackgroundHighlight: darken(@agilion-blue, 10%);
 
 //
 // Mixins
@@ -177,6 +176,7 @@ a {
 @column-width: 60;
 @gutter-width: 20;
 @total-width: 100%;
+@horizontalComponentOffset: 220px;
 
 // Base header/main/footer structure & layout
 body {
@@ -371,12 +371,9 @@ body.contact {
   .contact-form {
     .column(8);
     form {
-      label {
-        padding: 0 0 2px 6px;
-      }
       .control-label {
+        font-size: 1.2em;
         font-weight: bold;
-        padding: 0.5em 1em 0;
       }
       input[type=text], textarea {
         background-color: rgba(255, 255, 255, 0.3);
@@ -426,7 +423,6 @@ body.process {
   section.process {
     .column(10);
   }
-
 }
 
 
