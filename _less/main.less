@@ -190,6 +190,8 @@ body {
     background-image: url('/images/background-pattern.png');
     background-repeat: repeat;
     background-color: @white;
+    border: 1px solid @white;
+    border-style: solid none;
   }
 
   header, footer, #main {
@@ -208,23 +210,28 @@ body {
 // Header Styling
 header {
   .clearfix();
+  .box-shadow(inset 0 -5px 4px rgba(0, 0, 0, 0.3));
   #logo {
     .column(2);
-    margin-bottom: 1.25em;
-    margin-top: 0.75em;
+    margin-bottom: 1.2em;
+    margin-top: 0.85em;
   }
   nav[role='site-navigation'] {
     .column(10);
     ul {
       float: right;
+      margin: 1.1em 0;
       li {
         float: left;
         a {
-          font-weight: bold;
+          font-weight: 600;
           color: @white;
           display: block;
           margin-left: 3em;
           text-align: right;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
@@ -236,6 +243,7 @@ header {
 footer {
   clear: both;
   .clearfix();
+  .box-shadow(inset 0 5px 4px rgba(0, 0, 0, 0.3));
   color: #dddddd;
   padding-top: 0.5em;
 
