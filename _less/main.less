@@ -148,18 +148,20 @@ h1 {
   font-weight: 800;
   &.with-subtitle {
     margin-bottom: 0em;
+    text-align: center;
     & + h2.subtitle {
       font-weight: 300;
       margin-bottom: 2em;
       margin-top: 0;
       line-height: 1.1em;
+      text-align: center;
     }
   }
 }
 
 h2 {
   color: @brown;
-  font-size: 30px;
+  font-size: 1.85em;
 }
 
 a {
@@ -276,17 +278,13 @@ footer {
 //
 
 body.home {
-  h1.with-subtitle, h2.subtitle {
-    text-align: center;
-  }
   section.customers {
-    .clearfix();
     .h-rule();
     margin-bottom: 4em;
     ul {
+      .clearfix();
       li {
         .column(4);
-        // may want to add div wrapper in li
         text-align: center;
       }
     }
@@ -294,7 +292,9 @@ body.home {
   section.what-we-do {
     .clearfix();
     .h-rule();
-    margin-bottom: 10em;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 4em;
   }
 }
 
@@ -430,29 +430,43 @@ body.community {
 body.process {
   section.process {
     .row(12);
+    h2 {
+      margin-bottom: 0.25em;
+    }
+    p {
+      font-size: 1.25em;
+      line-height: 1.5em;
+      margin-top: 0;
+    }
     div.icon {
       .column(2, 12);
-      padding-top: 2em;
+      padding-top: 1.9em;
       text-align: center;
+      i {
+        line-height: 1em;
+        text-shadow: 0 -1px 0 @brown, 0 1px 0 @white;
+      }
     }
     div.content {
-      .column(8, 12);
-      .pull(2);
+      .column(10, 12);
     }
     &.discovery {
       .h-rule();
       i {
-        color: @agilion-blue;
+        color: darken(@agilion-blue, 10%);
       }
     }
     &.design i {
-      color: @agilion-red;
+      color: darken(@agilion-red, 10%);
     }
     &.development i {
-      color: @agilion-orange;
+      color: darken(@agilion-orange, 10%);
     }
-    &.delivery i {
-      color: @agilion-yellow;
+    &.delivery {
+      margin-bottom: 6em;
+      i {
+        color: darken(@agilion-yellow, 10%);
+      }
     }
   }
 }

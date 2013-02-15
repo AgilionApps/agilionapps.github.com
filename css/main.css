@@ -1410,16 +1410,18 @@ h1 {
 }
 h1.with-subtitle {
   margin-bottom: 0em;
+  text-align: center;
 }
 h1.with-subtitle + h2.subtitle {
   font-weight: 300;
   margin-bottom: 2em;
   margin-top: 0;
   line-height: 1.1em;
+  text-align: center;
 }
 h2 {
   color: #413333;
-  font-size: 30px;
+  font-size: 1.85em;
 }
 a {
   color: #413333;
@@ -1611,12 +1613,7 @@ footer .content .copyright {
   text-align: right;
   font-size: .8em;
 }
-body.home h1.with-subtitle,
-body.home h2.subtitle {
-  text-align: center;
-}
 body.home section.customers {
-  *zoom: 1;
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
   background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
   background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
@@ -1630,21 +1627,24 @@ body.home section.customers {
   padding-top: 74.998px !important;
   margin-bottom: 4em;
 }
-body.home section.customers:before,
-body.home section.customers:after {
+body.home section.customers ul {
+  *zoom: 1;
+}
+body.home section.customers ul:before,
+body.home section.customers ul:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body.home section.customers:after {
+body.home section.customers ul:after {
   clear: both;
 }
-body.home section.customers:before,
-body.home section.customers:after {
+body.home section.customers ul:before,
+body.home section.customers ul:after {
   content: "";
   display: table;
 }
-body.home section.customers:after {
+body.home section.customers ul:after {
   clear: both;
 }
 body.home section.customers ul li {
@@ -1667,7 +1667,9 @@ body.home section.what-we-do {
   background-position: 0 -4px;
   background-repeat: no-repeat;
   padding-top: 74.998px !important;
-  margin-bottom: 10em;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 4em;
 }
 body.home section.what-we-do:before,
 body.home section.what-we-do:after {
@@ -1932,20 +1934,31 @@ body.process section.process:after {
 body.process section.process:after {
   clear: both;
 }
+body.process section.process h2 {
+  margin-bottom: 0.25em;
+}
+body.process section.process p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin-top: 0;
+}
 body.process section.process div.icon {
   display: inline;
   float: left;
   width: 14.583333333333334%;
   margin: 0 1.0416666666666665%;
-  padding-top: 2em;
+  padding-top: 1.9em;
   text-align: center;
+}
+body.process section.process div.icon i {
+  line-height: 1em;
+  text-shadow: 0 -1px 0 #413333, 0 1px 0 #ffffff;
 }
 body.process section.process div.content {
   display: inline;
   float: left;
-  width: 64.58333333333334%;
+  width: 81.25%;
   margin: 0 1.0416666666666665%;
-  margin-right: 17.708333333333332%;
 }
 body.process section.process.discovery {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
@@ -1961,16 +1974,19 @@ body.process section.process.discovery {
   padding-top: 74.998px !important;
 }
 body.process section.process.discovery i {
-  color: #527fa0;
+  color: #41647e;
 }
 body.process section.process.design i {
-  color: #e47c77;
+  color: #dc534c;
 }
 body.process section.process.development i {
-  color: #e99b64;
+  color: #e37e37;
+}
+body.process section.process.delivery {
+  margin-bottom: 6em;
 }
 body.process section.process.delivery i {
-  color: #e8ba6d;
+  color: #e1a541;
 }
 /* ==========================================================================
    Helper classes
