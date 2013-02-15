@@ -1401,9 +1401,10 @@ textarea {
 
   background-position: 0 -4px;
   background-repeat: no-repeat;
+  padding-top: 74.998px !important;
 }
 h1 {
-  color: #492f2f;
+  color: #413333;
   font-size: 4.571em;
   font-weight: 800;
 }
@@ -1411,14 +1412,17 @@ h1.with-subtitle {
   margin-bottom: 0em;
 }
 h1.with-subtitle + h2.subtitle {
+  font-weight: 300;
+  margin-bottom: 2em;
   margin-top: 0;
+  line-height: 1.1em;
 }
 h2 {
-  color: #492f2f;
+  color: #413333;
   font-size: 30px;
 }
 a {
-  color: #492f2f;
+  color: #413333;
   font-weight: 400;
   text-decoration: none;
 }
@@ -1476,17 +1480,17 @@ body footer .content-wrapper:after,
 body #main .content-wrapper:after {
   clear: both;
 }
-body header .content-wrapper .content,
-body footer .content-wrapper .content,
-body #main .content-wrapper .content {
+body header .content-wrapper > .content,
+body footer .content-wrapper > .content,
+body #main .content-wrapper > .content {
   margin-left: 5%;
   margin-right: 5%;
 }
 header {
   *zoom: 1;
-  -webkit-box-shadow: inset 0 -5px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 -5px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 -5px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.3);
 }
 header:before,
 header:after {
@@ -1537,11 +1541,10 @@ header nav[role='site-navigation'] ul li a:hover {
   text-decoration: none;
 }
 footer {
-  clear: both;
   *zoom: 1;
-  -webkit-box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 5px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.3);
   color: #dddddd;
   padding-top: 0.5em;
 }
@@ -1562,24 +1565,45 @@ footer:after {
 footer:after {
   clear: both;
 }
-footer .contact-info {
+footer .content {
+  *zoom: 1;
+  padding: 1em 0 4em;
+}
+footer .content:before,
+footer .content:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+footer .content:after {
+  clear: both;
+}
+footer .content:before,
+footer .content:after {
+  content: "";
+  display: table;
+}
+footer .content:after {
+  clear: both;
+}
+footer .content .contact-info {
   display: inline;
   float: left;
   width: 47.91666666666667%;
   margin: 0 1.0416666666666665%;
 }
-footer .contact-info h2.org {
+footer .content .contact-info h2.org {
   display: none;
 }
-footer .contact-info .tel,
-footer .contact-info .email,
-footer .contact-info .address {
+footer .content .contact-info .tel,
+footer .content .contact-info .email,
+footer .content .contact-info .address {
   display: block;
 }
-footer .contact-info a {
+footer .content .contact-info a {
   color: #dddddd;
 }
-footer .copyright {
+footer .content .copyright {
   display: inline;
   float: left;
   width: 47.91666666666667%;
@@ -1587,8 +1611,23 @@ footer .copyright {
   text-align: right;
   font-size: .8em;
 }
+body.home h1.with-subtitle,
+body.home h2.subtitle {
+  text-align: center;
+}
 body.home section.customers {
   *zoom: 1;
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  padding-top: 74.998px !important;
   margin-bottom: 4em;
 }
 body.home section.customers:before,
@@ -1617,6 +1656,17 @@ body.home section.customers ul li {
 }
 body.home section.what-we-do {
   *zoom: 1;
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  padding-top: 74.998px !important;
   margin-bottom: 10em;
 }
 body.home section.what-we-do:before,
@@ -1647,6 +1697,7 @@ body.team .first {
 
   background-position: 0 -4px;
   background-repeat: no-repeat;
+  padding-top: 74.998px !important;
 }
 body.team .team-member {
   *zoom: 1;
@@ -1671,7 +1722,7 @@ body.team .team-member:after {
 }
 body.team .team-member h3 {
   margin-top: .25em;
-  color: #492f2f;
+  color: #413333;
 }
 body.team .team-member .org {
   display: none;
@@ -1699,21 +1750,12 @@ body.team .team-member .bio ul.links li {
   *zoom: 1;
   vertical-align: middle;
 }
-body.customers section.first {
-  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
-  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
-  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
-  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
-  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-
-  background-position: 0 -4px;
-  background-repeat: no-repeat;
-}
 body.customers section.featured-customer {
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
   *zoom: 1;
-  padding-top: 2em;
+  margin-bottom: 4em;
 }
 body.customers section.featured-customer:before,
 body.customers section.featured-customer:after {
@@ -1732,7 +1774,7 @@ body.customers section.featured-customer:after {
 body.customers section.featured-customer:after {
   clear: both;
 }
-body.customers section.featured-customer div.screenshots {
+body.customers section.featured-customer div.screenshot {
   display: inline;
   float: left;
   width: 22.916666666666664%;
@@ -1743,6 +1785,24 @@ body.customers section.featured-customer div.story {
   float: left;
   width: 72.91666666666666%;
   margin: 0 1.0416666666666665%;
+}
+body.customers section.featured-customer div.story p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.25em;
+}
+body.customers section.featured-customer#eminder {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  padding-top: 74.998px !important;
 }
 body.customers section.testomonials {
   background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
@@ -1755,6 +1815,7 @@ body.customers section.testomonials {
 
   background-position: 0 -4px;
   background-repeat: no-repeat;
+  padding-top: 74.998px !important;
   *zoom: 1;
   padding-top: 4em;
   margin-top: 4em;
@@ -1824,32 +1885,6 @@ body.contact .contact-info {
   width: 31.25%;
   margin: 0 1.0416666666666665%;
 }
-body.process div.icon {
-  padding-top: 2em;
-  text-align: center;
-  display: inline;
-  float: left;
-  width: 14.583333333333334%;
-  margin: 0 1.0416666666666665%;
-}
-body.process div.discovery {
-  color: #527fa0;
-}
-body.process div.design {
-  color: #e47c77;
-}
-body.process div.development {
-  color: #e99b64;
-}
-body.process div.delivery {
-  color: #e8ba6d;
-}
-body.process section.process {
-  display: inline;
-  float: left;
-  width: 81.25%;
-  margin: 0 1.0416666666666665%;
-}
 body.community .slide-deck {
   display: inline;
   float: left;
@@ -1873,6 +1908,69 @@ body.community .slide-deck:after {
 }
 body.community .slide-deck:after {
   clear: both;
+}
+body.process section.process {
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *zoom: 1;
+}
+body.process section.process:before,
+body.process section.process:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body.process section.process:after {
+  clear: both;
+}
+body.process section.process:before,
+body.process section.process:after {
+  content: "";
+  display: table;
+}
+body.process section.process:after {
+  clear: both;
+}
+body.process section.process div.icon {
+  display: inline;
+  float: left;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+  padding-top: 2em;
+  text-align: center;
+}
+body.process section.process div.content {
+  display: inline;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+  margin-right: 17.708333333333332%;
+}
+body.process section.process.discovery {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  padding-top: 74.998px !important;
+}
+body.process section.process.discovery i {
+  color: #527fa0;
+}
+body.process section.process.design i {
+  color: #e47c77;
+}
+body.process section.process.development i {
+  color: #e99b64;
+}
+body.process section.process.delivery i {
+  color: #e8ba6d;
 }
 /* ==========================================================================
    Helper classes
