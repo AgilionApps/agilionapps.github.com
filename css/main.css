@@ -1982,6 +1982,8 @@ body.community section.happening div.content .slide-deck {
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   *zoom: 1;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 body.community section.happening div.content .slide-deck:before,
 body.community section.happening div.content .slide-deck:after {
