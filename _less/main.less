@@ -103,7 +103,7 @@ textarea {
 // Colors
 //
 
-@brown:     #413333;
+@brown:          #413333;
 @agilion-blue:   #527fa0;
 @agilion-red:    #e47c77;
 @agilion-orange: #e99b64;
@@ -165,6 +165,11 @@ h2 {
   font-size: 1.85em;
 }
 
+h3 {
+  color: @brown;
+  font-size: 1.25em;
+}
+
 a {
   color: @brown;
   font-weight: 400;
@@ -182,7 +187,7 @@ a {
 @column-width: 60;
 @gutter-width: 20;
 @total-width: 100%;
-@horizontalComponentOffset: 220px;
+@horizontalComponentOffset: 240px;
 
 // Base header/main/footer structure & layout
 body {
@@ -396,30 +401,48 @@ body.customers {
 //
 
 body.contact {
-  .contact-form {
-    .column(8);
-    form {
-      .control-label {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-      input[type=text], textarea {
-        background-color: rgba(255, 255, 255, 0.3);
-        width: 300px;
-        color: rgba(65, 51, 51, 0.9);
-        border: 1px solid rgba(65, 51, 51, 0.25);
-        font-size: 18px;
-        padding: 0.45em 0.55em;
-        @shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 1px white;
-        .box-shadow(@shadow);
-      }
-      .required {
-        color: #a51100;
+  .section-wrap {
+    .h-rule();
+    section.contact-form {
+      .column(7);
+      margin-bottom: 6em;
+      form {
+        .control-label {
+          color: @brown;
+          font-size: 1.2em;
+          font-weight: bold;
+          padding-top: 7px;
+        }
+        input[type=text], textarea {
+          background-color: rgba(255, 255, 255, 0.3);
+          width: 300px;
+          color: rgba(65, 51, 51, 0.9);
+          border: 1px solid rgba(65, 51, 51, 0.25);
+          font-size: 18px;
+          padding: 0.45em 0.55em;
+          @shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 1px white;
+          .box-shadow(@shadow);
+        }
+        .required {
+          color: #a51100;
+        }
       }
     }
-  }
-  .contact-info {
-    .column(4);
+    .contact-info {
+      .column(5);
+      font-size: 1.1em;
+      ul {
+        margin: 0;
+        li {
+          list-style-type: none;
+          margin-bottom: 2em;
+          h3 {
+            margin-bottom: 0.3em;
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 }
 
