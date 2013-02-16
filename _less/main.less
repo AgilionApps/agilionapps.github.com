@@ -451,9 +451,46 @@ body.contact {
 //
 
 body.community {
-  .slide-deck {
-    .column(4);
-    .clearfix();
+  section.happening {
+    .row(12);
+    margin-bottom: 3em;
+    div.icon {
+      .column(2, 12);
+      padding-top: 0.3em;
+      text-align: center;
+      i {
+        line-height: 1em;
+        text-shadow: 0 -1px 0 @brown, 0 1px 0 @white;
+      }
+    }
+    div.content {
+      .column(10, 12);
+      h2 {
+        margin-bottom: 0.25em;
+        margin-top: 0;
+      }
+      .slide-deck {
+        .column(4);
+        .clearfix();
+      }
+    }
+    &#events {
+      .h-rule();
+      i {
+        color: darken(@agilion-yellow, 10%);
+      }
+    }
+    &#user-groups {
+      i {
+        color: darken(@agilion-blue, 10%);
+      }
+    }
+    &#talks {
+      margin-bottom: 6em;
+      i {
+        color: darken(@agilion-orange, 10%);
+      }
+    }
   }
 }
 

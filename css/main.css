@@ -1930,29 +1930,100 @@ body.contact .section-wrap .contact-info ul li h3 {
   margin-bottom: 0.3em;
   margin-top: 0;
 }
-body.community .slide-deck {
+body.community section.happening {
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  *zoom: 1;
+  margin-bottom: 3em;
+}
+body.community section.happening:before,
+body.community section.happening:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+body.community section.happening:after {
+  clear: both;
+}
+body.community section.happening:before,
+body.community section.happening:after {
+  content: "";
+  display: table;
+}
+body.community section.happening:after {
+  clear: both;
+}
+body.community section.happening div.icon {
+  display: inline;
+  float: left;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+  padding-top: 0.3em;
+  text-align: center;
+}
+body.community section.happening div.icon i {
+  line-height: 1em;
+  text-shadow: 0 -1px 0 #413333, 0 1px 0 #ffffff;
+}
+body.community section.happening div.content {
+  display: inline;
+  float: left;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
+}
+body.community section.happening div.content h2 {
+  margin-bottom: 0.25em;
+  margin-top: 0;
+}
+body.community section.happening div.content .slide-deck {
   display: inline;
   float: left;
   width: 31.25%;
   margin: 0 1.0416666666666665%;
   *zoom: 1;
 }
-body.community .slide-deck:before,
-body.community .slide-deck:after {
+body.community section.happening div.content .slide-deck:before,
+body.community section.happening div.content .slide-deck:after {
   display: table;
   content: "";
   line-height: 0;
 }
-body.community .slide-deck:after {
+body.community section.happening div.content .slide-deck:after {
   clear: both;
 }
-body.community .slide-deck:before,
-body.community .slide-deck:after {
+body.community section.happening div.content .slide-deck:before,
+body.community section.happening div.content .slide-deck:after {
   content: "";
   display: table;
 }
-body.community .slide-deck:after {
+body.community section.happening div.content .slide-deck:after {
   clear: both;
+}
+body.community section.happening#events {
+  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
+  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -o-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaaaaa 0%, transparent 100%);
+  background-image: radial-gradient(ellipse closest-side at 50% 5px, #aaaaaa 0%, transparent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+  background-position: 0 -4px;
+  background-repeat: no-repeat;
+  padding-top: 74.998px !important;
+}
+body.community section.happening#events i {
+  color: #e1a541;
+}
+body.community section.happening#user-groups i {
+  color: #41647e;
+}
+body.community section.happening#talks {
+  margin-bottom: 6em;
+}
+body.community section.happening#talks i {
+  color: #e37e37;
 }
 body.process section.process {
   display: block;
