@@ -532,6 +532,70 @@ body.process {
   }
 }
 
+//
+// Responsive Layout
+//
+@media (max-width: 767px) {
+  body {
+    &.team {
+      .team-member {
+        .photo {
+          display: block;
+          float: none;
+          text-align: center;
+          width: 100%;
+        }
+        .bio {
+          clear: both;
+          width: 100%;
+          h3 {
+            text-align: center;
+          }
+        }
+        ul.links {
+          text-align: center;
+        }
+      }
+    }
+    &.community section.happening div.content .slide-deck {
+      display: block;
+      float: none;
+      width: 100%;
+    }
+    &.contact .section-wrap section {
+      &.contact-form, &.contact-info {
+        float: none;
+        width: 100%;
+      }
+      &.contact-info {
+        ul {
+          padding: 0;
+        }
+      }
+    }
+  }
+  header {
+    nav[role='site-navigation'] {
+      float: right;
+      width: auto;
+      ul {
+        margin-bottom: 1.6em;
+        li {
+          float: none;
+        }
+      }
+    }
+  }
+  h1.with-subtitle {
+    text-align: center;
+    + h2.subtitle {
+      text-align: center;
+    }
+  }
+  div.icon i {
+    font-size: 2em;
+  }
+}
 
 
 /* ==========================================================================

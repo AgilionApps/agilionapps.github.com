@@ -2048,6 +2048,56 @@ body.process section.process.delivery {
 body.process section.process.delivery i {
   color: #e1a541;
 }
+@media (max-width: 767px) {
+  body.team .team-member .photo {
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  body.team .team-member .bio {
+    clear: both;
+    width: 100%;
+  }
+  body.team .team-member .bio h3 {
+    text-align: center;
+  }
+  body.team .team-member ul.links {
+    text-align: center;
+  }
+  body.community section.happening div.content .slide-deck {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  body.contact .section-wrap section.contact-form,
+  body.contact .section-wrap section.contact-info {
+    float: none;
+    width: 100%;
+  }
+  body.contact .section-wrap section.contact-info ul {
+    padding: 0;
+  }
+  header nav[role='site-navigation'] {
+    float: right;
+    width: auto;
+  }
+  header nav[role='site-navigation'] ul {
+    margin-bottom: 1.6em;
+  }
+  header nav[role='site-navigation'] ul li {
+    float: none;
+  }
+  h1.with-subtitle {
+    text-align: center;
+  }
+  h1.with-subtitle + h2.subtitle {
+    text-align: center;
+  }
+  div.icon i {
+    font-size: 2em;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
