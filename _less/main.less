@@ -103,7 +103,8 @@ textarea {
 // Colors
 //
 
-@brown:          #413333;
+@blue:           #08183F;
+@body-bg-color:  #F8F8F8;
 @agilion-blue:   #527fa0;
 @agilion-red:    #e47c77;
 @agilion-orange: #e99b64;
@@ -127,14 +128,8 @@ textarea {
 //
 
 .h-rule {
-  background: -webkit-radial-gradient(50% 0%, 50% 10px, #fefefe 0%, transparent 100%);
-  background-image: -moz-radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
-  background: -o-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
-  background: -ms-radial-gradient(50% 0%, 50% 5px, #aaa 0%, transparent 100%);
-  background-image: radial-gradient(ellipse closest-side at 50% 5px, #AAAAAA 0%, transparent 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#AAAAAA", endColorstr="#FFFFFF", GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-position: 0 -4px;
-  background-repeat: no-repeat;
+  .box-shadow(0 1px 0 #fff);
+  border-top: 1px solid #D0D0E4;
   padding-top: @baseFontSize * 5.357 !important;
 }
 
@@ -143,35 +138,34 @@ textarea {
 //
 
 h1 {
-  color: @brown;
+  color: @blue;
   font-size: 4.571em;
   font-weight: 800;
+  margin: 1em 0;
   &.with-subtitle {
     line-height: 0.9em;
-    margin-bottom: 0.2em;
-    text-align: center;
+    margin-bottom: 0.1em;
     & + h2.subtitle {
       font-weight: 300;
-      margin-bottom: 2em;
+      margin-bottom: 1.25em;
       margin-top: 0;
-      line-height: 1.1em;
-      text-align: center;
+      line-height: 1em;
     }
   }
 }
 
 h2 {
-  color: @brown;
+  color: @blue;
   font-size: 1.85em;
 }
 
 h3 {
-  color: @brown;
+  color: @blue;
   font-size: 1.25em;
 }
 
 a {
-  color: @brown;
+  color: @blue;
   font-weight: 400;
   text-decoration: none;
   &:hover {
@@ -191,21 +185,10 @@ a {
 
 // Base header/main/footer structure & layout
 body {
-  background: @brown;
+  background: @body-bg-color;
   font-family: @sansFontFamily;
-  header, footer {
-    background: @brown;
-  }
-
-  div#main {
-    background-image: url('/images/background-pattern.png');
-    background-repeat: repeat;
-    background-color: @white;
-    border: 1px solid @white;
-    border-style: solid none;
-  }
-
   header, footer, #main {
+    .box-shadow(inset 0 1px 1px #ddd);
     .content-wrapper {
       .clearfix();
       max-width: 1200px;
@@ -221,22 +204,22 @@ body {
 // Header Styling
 header {
   .clearfix();
-  .box-shadow(inset 0 -5px 5px rgba(0, 0, 0, 0.3));
+  background: #fff;
   #logo {
     .column(2);
     margin-bottom: 1.2em;
+    margin-left: 0;
     margin-top: 0.85em;
   }
   nav[role='site-navigation'] {
     .column(10);
     ul {
       float: right;
-      margin: 1.1em 0;
+      margin: 1.6em 0 0;
       li {
         float: left;
         a {
           font-weight: 600;
-          color: @white;
           display: block;
           margin-left: 3em;
           text-align: right;
@@ -249,12 +232,18 @@ header {
   }
 }
 
+#main {
+  .box-shadow(inset 0 5px 5px rgba(0, 0, 0, 0.3));
+}
+
 // Footer Styling
 
 footer {
   .clearfix();
-  .box-shadow(inset 0 5px 5px rgba(0, 0, 0, 0.3));
-  color: #dddddd;
+  .box-shadow(inset 0 6px 8px black);
+  background: #19191B;
+  color: #fff;
+  font-size: 0.8em;
   padding-top: 0.5em;
   .content {
     .clearfix();
@@ -274,7 +263,6 @@ footer {
     .copyright {
       .column(6);
       text-align: right;
-      font-size: .8em;
     }
   }
 }
@@ -291,7 +279,6 @@ body.home {
       .clearfix();
       li {
         .column(4);
-        text-align: center;
       }
     }
   }
@@ -301,6 +288,7 @@ body.home {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 4em;
+    padding-top: 1.3em;
     p {
       margin-top: 0;
     }
@@ -317,7 +305,7 @@ body.team {
     padding-top: 3em;
     h3 {
       margin-top: .25em;
-      color: @brown;
+      color: @blue;
     }
     .org {
       display: none;
@@ -373,8 +361,8 @@ body.customers {
   }
 
   section.testomonials {
-    .h-rule();
     .clearfix();
+    .h-rule();
     padding-top: 4em;
     margin-bottom: 6em;
     margin-top: 6em;
@@ -408,7 +396,7 @@ body.contact {
       margin-bottom: 6em;
       form {
         .control-label {
-          color: @brown;
+          color: @grayDarker;
           font-size: 1.2em;
           font-weight: bold;
           padding-top: 7px;
@@ -420,8 +408,6 @@ body.contact {
           border: 1px solid rgba(65, 51, 51, 0.25);
           font-size: 18px;
           padding: 0.45em 0.55em;
-          @shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 1px white;
-          .box-shadow(@shadow);
         }
         .required {
           color: #a51100;
@@ -460,7 +446,7 @@ body.community {
       text-align: center;
       i {
         line-height: 1em;
-        text-shadow: 0 -1px 0 @brown, 0 1px 0 @white;
+        text-shadow: 0 -1px 0 @grayDarker, 0 1px 0 @white;
       }
     }
     div.content {
@@ -519,7 +505,7 @@ body.process {
       text-align: center;
       i {
         line-height: 1em;
-        text-shadow: 0 -1px 0 @brown, 0 1px 0 @white;
+        text-shadow: 0 -1px 0 @grayDarker, 0 1px 0 @white;
       }
     }
     div.content {
